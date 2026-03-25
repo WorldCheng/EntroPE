@@ -37,7 +37,7 @@ monotonicity=0
 # =========================
 dropout=0.1
 learning_rate=0.01
-train_epochs=10
+train_epochs=100
 itr=1
 des=Exp
 
@@ -49,7 +49,7 @@ is_training=1
 # =========================
 # Experiment loop
 # =========================
-for pred_len in 96; do
+for pred_len in 96 192 336 720; do
     
     model_id="${model_id_name}_${seq_len}preds${pred_len}"
     
