@@ -23,23 +23,23 @@ class TrainingConfig:
     # Model Architecture
     n_layer = 3
     n_head = 2
-    n_embd = 16
+    n_embd = 32
     dropout = 0.1
     bias = False
     vocab_size = 256
     
     # Data Configuration
-    dataset_name = 'ETTh2'
+    dataset_name = 'ETTh1'
     features = 'M'
-    data="ETTh2"
+    data="ETTh1"
     embed="timeF"
     freq = 'h'
     root_path = './dataset/'
-    data_path = 'ETTh2.csv'
+    data_path = 'ETTh1.csv'
     batch_size = 128
-    seq_len = 96
+    seq_len = 128
     pred_len = 1
-    label_len = 95
+    label_len = 127
     block_size = seq_len
     target = 'OT'
     num_workers = 4
