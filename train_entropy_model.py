@@ -49,7 +49,7 @@ class TrainingConfig:
     weight_decay = 0.05
     beta1 = 0.9
     beta2 = 0.95
-    epochs = 50
+    epochs = 100
     grad_accumulation_steps = 1
     clip_grad = 1.0
     

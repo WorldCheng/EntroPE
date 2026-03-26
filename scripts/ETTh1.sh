@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -euo pipefail
+
 mkdir -p ./logs/LongForecasting
 
 # =========================
@@ -10,10 +12,10 @@ data=ETTh1
 features=M
 root_path=./dataset/
 data_path=ETTh1.csv
-model_id_name=ETTh1
+model_id_name=best_model_checkpoint
 enc_in=7
 freq=h
-seq_len=96
+seq_len=128
 batch_size=128
 seed=42
 

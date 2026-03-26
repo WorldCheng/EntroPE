@@ -519,6 +519,7 @@ def create_patch_encoder(args: EntroPEArgs) -> PatchEncoder:
         cross_attn_init_by_pooling=args.cross_attn_init_by_pooling,
         head_dim=args.head_dim,
         max_encoder_seq_length=args.max_encoder_seq_length,
+        max_seqlen=args.max_encoder_seq_length,
         dropout=args.dropout,
         vocab_size=args.vocab_size,
         norm_eps=args.norm_eps,

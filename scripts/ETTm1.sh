@@ -6,11 +6,11 @@ mkdir -p ./logs/LongForecasting
 # Fixed experiment metadata
 # =========================
 model=EntroPE
-data=ETTh1
+data=ETTm1
 features=M
 root_path=./dataset/
-data_path=ETTh1.csv
-model_id_name=ETTh1
+data_path=ETTm1.csv
+model_id_name=ETTm1
 enc_in=7
 freq=h
 seq_len=96
